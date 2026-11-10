@@ -8,7 +8,7 @@
 :root{
   --bg:#EDF0EC; --surface:#FFFFFF; --sunk:#E3E8E3; --ink:#17201D; --muted:#56625D; --line:#CBD3CD;
   --accent:#1C6A56; --accent-ink:#FFFFFF;
-  --found:#87661A; --cont:#1E5D93; --crust:#9A3D5B; --ice:#5A7DA6; --wave:#0D7F94; --thermal:#B4482C; --seis:#5A4EA6; --volc:#C2501B; --synth:#1C6A56;
+  --found:#87661A; --cont:#1E5D93; --crust:#9A3D5B; --ice:#5A7DA6; --wave:#0D7F94; --defm:#7A5A2E; --thermal:#B4482C; --seis:#5A4EA6; --volc:#C2501B; --synth:#1C6A56;
   --good:#1D7744; --bad:#B0281F; --warn:#9A6400; --good-bg:#E0F1E6; --bad-bg:#F8E2DF;
   --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -17,12 +17,12 @@
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --bg:#0F1412; --surface:#161D1A; --sunk:#1D2622; --ink:#E3EAE6; --muted:#9BA8A2; --line:#2B3732;
   --accent:#5EC2A1; --accent-ink:#0A1410;
-  --found:#D9B058; --cont:#72AFE6; --crust:#E27F9F; --ice:#9DB8DD; --wave:#4CC4D8; --thermal:#EE8A6B; --seis:#A99DF0; --volc:#F28B56; --synth:#5EC2A1;
+  --found:#D9B058; --cont:#72AFE6; --crust:#E27F9F; --ice:#9DB8DD; --wave:#4CC4D8; --defm:#D6A86A; --thermal:#EE8A6B; --seis:#A99DF0; --volc:#F28B56; --synth:#5EC2A1;
   --good:#5BCB8B; --bad:#F2877E; --warn:#E5B64F; --good-bg:#15301F; --bad-bg:#3A1C19; color-scheme:dark }}
 :root[data-theme="dark"]{
   --bg:#0F1412; --surface:#161D1A; --sunk:#1D2622; --ink:#E3EAE6; --muted:#9BA8A2; --line:#2B3732;
   --accent:#5EC2A1; --accent-ink:#0A1410;
-  --found:#D9B058; --cont:#72AFE6; --crust:#E27F9F; --ice:#9DB8DD; --wave:#4CC4D8; --thermal:#EE8A6B; --seis:#A99DF0; --volc:#F28B56; --synth:#5EC2A1;
+  --found:#D9B058; --cont:#72AFE6; --crust:#E27F9F; --ice:#9DB8DD; --wave:#4CC4D8; --defm:#D6A86A; --thermal:#EE8A6B; --seis:#A99DF0; --volc:#F28B56; --synth:#5EC2A1;
   --good:#5BCB8B; --bad:#F2877E; --warn:#E5B64F; --good-bg:#15301F; --bad-bg:#3A1C19; color-scheme:dark }
 
 *{box-sizing:border-box}
@@ -254,6 +254,7 @@ canvas.wcan{width:100%;height:auto;display:block;border-radius:8px;background:va
 <script src="content/waves.js" charset="utf-8"></script>
 <script src="content/ice.js" charset="utf-8"></script>
 <script src="content/crust.js" charset="utf-8"></script>
+<script src="content/deformation.js" charset="utf-8"></script>
 <script src="content/thermal.js" charset="utf-8"></script>
 <script src="content/seismology.js" charset="utf-8"></script>
 <script src="content/volcanology.js" charset="utf-8"></script>
